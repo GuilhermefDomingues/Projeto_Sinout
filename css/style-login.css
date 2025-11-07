@@ -1,0 +1,133 @@
+/* estilos gerais */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("../img/fundoLogin.png"); /* Fundo exportado do Figma */
+  background-size: cover; /* cobre toda a tela */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+  border-radius: 20px;
+}
+
+/* container principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* logo */
+.logo img {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* login */
+.login-box {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 3px solid #f15a24; /* Laranja característico do Figma */
+}
+
+/* titulo */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3a216e; /* Roxo do Figma */
+  font-weight: 700;
+}
+
+/* campus de entrada de email e senha */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 3px solid #f15a24;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efeito ao clicar no input */
+.input-group input:focus {
+  border-color: #f15a24;
+}
+
+/* botao de login */
+.btn-login {
+  background-color: #f15a24;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #d94e1f;
+}
+
+/* texto de cadastro */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.register-text a {
+  color: #3a216e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* resposividade para o mobile */
+@media (max-width: 600px) {
+  body {
+    background-position: right;
+  }
+
+  .login-box {
+    width: 85%;
+    padding: 30px 25px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+}
