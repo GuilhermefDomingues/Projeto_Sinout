@@ -1,0 +1,216 @@
+/* ===== RESET GERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f6f5fc;
+  color: #333;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.estatisticas-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== TOPO ===== */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.icone-voltar {
+  width: 35px;
+  cursor: pointer;
+}
+
+.perfil {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ===== CARDS INFORMATIVOS ===== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex: 1;
+  min-width: 180px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 28px;
+  color: #40385e;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+}
+
+.card .emoji,
+.card .icone {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+/* ===== GRÁFICO DE VOLUME ===== */
+.grafico-volume {
+  flex: 2;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  height: 675px;
+}
+
+.grafico-volume h2 {
+  font-size: 20px;
+  color: #40385e;
+  margin-bottom: 10px;
+}
+
+/* ===== PAINEL LATERAL ===== */
+.painel-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ===== TABELA DE ATIVIDADE ===== */
+.atividade-recente {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.atividade-recente h3 {
+  color: #40385e;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.atividade-recente table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.atividade-recente th {
+  text-align: left;
+  color: #555;
+  font-size: 14px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.atividade-recente td {
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.atividade-recente tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== GRÁFICO DE EMOÇÕES ===== */
+.grafico-emocoes {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape {
+  margin-top: 50px;
+  background: #40385e;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.rodape .mensagem {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.rodape .links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.rodape h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #f9d64a;
+}
+
+.rodape p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rodape .direitos {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 950px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .grafico-volume,
+  .painel-lateral {
+    width: 100%;
+  }
+}

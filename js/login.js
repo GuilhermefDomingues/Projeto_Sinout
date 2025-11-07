@@ -33,7 +33,7 @@ const btnLogin = document.querySelector(".btn-login");
     msg.style.color = "green";
 
     setTimeout(() => {
-      window.location.href = "././plataforma/v.2/Plataforma.html"; 
+      window.location.href = "././plataforma/Plataforma.html"; 
     }, 1500);
   });
 
