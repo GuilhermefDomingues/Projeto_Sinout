@@ -1,25 +1,33 @@
-/* estilos gerais */
+/* ===== ESTILOS GERAIS ===== */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: url("../img/fundoLogin.png"); /* Fundo exportado do Figma */
-  background-size: cover; /* cobre toda a tela */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* importante para o ShapeDivider funcionar */
+  position: relative;
+  overflow: hidden;
 }
 
+/* ===== CONTAINER ===== */
 #container {
   background: #fff;
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
   border-radius: 20px;
+
+  /* fica acima da onda */
+  position: relative;
+  z-index: 2;
 }
 
-/* container principal */
+/* ===== CONTAINER PRINCIPAL ===== */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -28,13 +36,13 @@ body {
   width: 100%;
 }
 
-/* logo */
+/* ===== LOGO ===== */
 .logo img {
   height: 80px;
   object-fit: contain;
 }
 
-/* login */
+/* ===== CARD DE LOGIN ===== */
 .login-box {
   background-color: #fff;
   padding: 40px 50px;
@@ -45,9 +53,10 @@ body {
   flex-direction: column;
   align-items: stretch;
   border: 3px solid #f15a24; /* Laranja característico do Figma */
+  z-index: 3; /* garante que fica acima da onda */
 }
 
-/* titulo */
+/* ===== TÍTULO ===== */
 .login-box h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -55,7 +64,7 @@ body {
   font-weight: 700;
 }
 
-/* campus de entrada de email e senha */
+/* ===== CAMPOS DE ENTRADA ===== */
 .input-group {
   display: flex;
   flex-direction: column;
@@ -82,7 +91,7 @@ body {
   border-color: #f15a24;
 }
 
-/* botao de login */
+/* ===== BOTÃO DE LOGIN ===== */
 .btn-login {
   background-color: #f15a24;
   color: white;
@@ -99,7 +108,7 @@ body {
   background-color: #d94e1f;
 }
 
-/* texto de cadastro */
+/* ===== TEXTO DE CADASTRO ===== */
 .register-text {
   text-align: center;
   margin-top: 15px;
@@ -116,7 +125,7 @@ body {
   text-decoration: underline;
 }
 
-/* resposividade para o mobile */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 600px) {
   body {
     background-position: right;
@@ -131,3 +140,78 @@ body {
     height: 60px;
   }
 }
+
+/* ===== SHAPE DIVIDER (onda laranja no fundo) ===== */
+.custom-shape-divider-bottom-1762536954 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  /* fica por trás de tudo */
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1762536954 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 600px;
+}
+
+.custom-shape-divider-bottom-1762536954 .shape-fill {
+  fill: #FD7B2F;
+}
+
+
+/* ===== SHAPE DIVIDER (onda roxo no fundo) ===== */
+.custom-shape-divider-bottom-1762540558 { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    overflow: hidden; 
+    line-height: 0; 
+} 
+
+.custom-shape-divider-bottom-1762540558 svg { 
+    position: relative; 
+    display: block; 
+    width: calc(159% + 1.3px); 
+    height: 680px; 
+} 
+
+.custom-shape-divider-bottom-1762540558 .shape-fill { 
+    fill: #40385E; 
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.btn-toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-toggle-password:hover {
+  color: #000;
+}
+
