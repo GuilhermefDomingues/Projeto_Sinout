@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-image: url("../img/fundoLogin.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +9,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
+  overflow: hidden;
 }
 
 #container {
@@ -17,6 +19,9 @@ body {
   padding: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+
+  position: relative;
+  z-index: 2;
 }
 
 /* container principal */
@@ -130,4 +135,50 @@ body {
   .logo img {
     height: 60px;
   }
+}
+
+/* ===== SHAPE DIVIDER (onda laranja no fundo) ===== */
+.custom-shape-divider-bottom-1762536954 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  /* fica por trás de tudo */
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1762536954 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 600px;
+}
+
+.custom-shape-divider-bottom-1762536954 .shape-fill {
+  fill: #FD7B2F;
+}
+
+
+/* ===== SHAPE DIVIDER (onda roxo no fundo) ===== */
+.custom-shape-divider-bottom-1762540558 { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    overflow: hidden; 
+    line-height: 0; 
+} 
+
+.custom-shape-divider-bottom-1762540558 svg { 
+    position: relative; 
+    display: block; 
+    width: calc(159% + 1.3px); 
+    height: 680px; 
+} 
+
+.custom-shape-divider-bottom-1762540558 .shape-fill { 
+    fill: #40385E; 
 }

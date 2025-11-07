@@ -18,6 +18,7 @@
   --font-secundaria: "Poppins", sans-serif;
 }
 
+/* ===== ESTRUTURA GERAL ===== */
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-white);
@@ -34,7 +35,7 @@ body {
   padding: 60px;
 }
 
-
+/* ===== PAINEL ===== */
 .painel {
   background-color: var(--cor-painel);
   color: var(--cor-black);
@@ -46,6 +47,7 @@ body {
   gap: 30px;
 }
 
+/* ===== CABEÇALHO ===== */
 .cabecalho {
   display: flex;
   align-items: center;
@@ -91,6 +93,7 @@ body {
   background-color: var(--cor-escura);
 }
 
+/* ===== CONTEÚDO PRINCIPAL ===== */
 .conteudo {
   display: flex;
   justify-content: space-between;
@@ -135,7 +138,7 @@ body {
   opacity: 0.7;
 }
 
-/* MENUDEEMOÇÃO*/
+/* ===== MENU DE EMOÇÃO ===== */
 .menu-emocao {
   position: absolute;
   bottom: 30px;
@@ -200,7 +203,7 @@ body {
 }
 
 
-/* DIREITO */
+/* ===== LADO DIREITO ===== */
 .config {
   flex: 0.45;
   background-color: var(--cor-painel2);

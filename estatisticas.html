@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+      <title>estatisticas</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=7" />
+    <meta name="description" content="ELA" />
+    <meta name="keywords" content="Comunicação, tradução, ELA, deficiencia" />
+    <meta name="author" content="Equipe-Sinout" />
+    <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="css/estatisticas.css">
+</head>
+<body>
+
+  <!-- ====== SEÇÃO PRINCIPAL ====== -->
+  <section class="estatisticas-container">
+
+    <!-- ====== LOGO E ÍCONE DE PERFIL ====== -->
+    <header class="topo">
+      <a href="#" class="voltar"><img src="img/Group 83.svg" alt="Voltar" class="icone-voltar"></a>
+      <img src="img/Logo (1).png" alt="Logo Sinout" class="logo">
+      <img src="img/Capturar3 2.png" alt="Perfil do usuário" class="perfil">
+    </header>
+
+    <!-- ====== CARDS INFORMATIVOS ====== -->
+    <div class="cards">
+      <div class="card">
+        <h3>80%</h3>
+        <p>Restante do Plano</p>
+      </div>
+
+      <div class="card">
+        <span class="emoji">😊</span>
+        <p>Sentimento Principal<br><strong>Felicidade</strong></p>
+      </div>
+
+      <div class="card">
+        <span class="icone">🖥️</span>
+        <p>Servidor<br>operacional</p>
+      </div>
+
+      <div class="card">
+        <h3>14</h3>
+        <p>Palavras<br>Programadas</p>
+      </div>
+
+      <div class="card">
+        <h3>1.287</h3>
+        <p>Recorrências Hoje</p>
+      </div>
+    </div>
+
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="conteudo">
+
+      <!-- ====== GRÁFICO DE VOLUME ====== -->
+      <section class="grafico-volume">
+        <h2>Volume de Recorrência Hoje</h2>
+        <div id="grafico-volume"></div> <!-- Aqui entra o gráfico ApexCharts -->
+      </section>
+
+      <!-- ====== PAINEL LATERAL ====== -->
+      <aside class="painel-lateral">
+
+        <!-- ====== TABELA DE ATIVIDADE ====== -->
+        <div class="atividade-recente">
+          <h3>Atividade Recente</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Qtd</th>
+                <th>Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Felicidade</td><td>2x</td><td>12h32</td></tr>
+              <tr><td>Dúvida</td><td>1x</td><td>12h00</td></tr>
+              <tr><td>Pensando</td><td>3x</td><td>11h57</td></tr>
+              <tr><td>Refletindo</td><td>4x</td><td>11h54</td></tr>
+              <tr><td>Dor</td><td>1x</td><td>11h40</td></tr>
+              <tr><td>Tristeza</td><td>1x</td><td>11h32</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ====== GRÁFICO DE EMOÇÕES ====== -->
+        <div class="grafico-emocoes">
+          <div id="grafico-emocoes"></div> <!-- Aqui entra o gráfico donut -->
+        </div>
+      </aside>
+    </main>
+  </section>
+
+  <!-- ====== RODAPÉ ====== -->
+  <footer class="rodape">
+    <div class="mensagem">
+      <p>Compartilhe seus códigos para você e seus amigos ganharem descontos quando utilizarem o nosso site!</p>
+    </div>
+
+    <div class="links">
+      <div>
+        <h4>Plataforma</h4>
+        <p>Visão geral</p>
+        <p>Recursos</p>
+        <p>Sobre</p>
+        <p>Preços</p>
+      </div>
+
+      <div>
+        <h4>Ajuda</h4>
+        <p>Como isso funciona?</p>
+        <p>Onde perguntar?</p>
+        <p>Como pagar?</p>
+        <p>Eu preciso disso?</p>
+      </div>
+
+      <div>
+        <h4>Contatos</h4>
+        <p>(55) 3943-3040</p>
+        <p>Rua Tito - Lapa/SP - Senac</p>
+      </div>
+    </div>
+
+    <p class="direitos">@Sinout todos os direitos reservados</p>
+  </footer>
+
+  <!-- Importa ApexCharts e JS -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="./js/estatisticas.js"></script>
+
+</body>
+</html>

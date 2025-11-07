@@ -8,7 +8,7 @@
 :root {
   /* 🌞 Tema Claro */
   --cor-fundo: #ffffff;
-  --cor-texto: #ffffff;
+  --cor-texto: #1a1625;
   --cor-primaria: #3F375C;      /* Roxo escuro */
   --cor-secundaria: #FCB98A;    /* Laranja claro */
   --cor-terciaria: #724D9C;     /* Roxo médio */
@@ -33,7 +33,7 @@ body {
   width: 100%;
   height: 100vh;
   gap: 30px;
-  background-image: url("img/Faq- IA (2).png"); /* imagem padrão (modo claro) */
+  background-image: url("../svg/Faq-\ IA\ Logado.svg"); /*  imagem padrão (modo claro) */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,16 +41,25 @@ body {
   font-family: var(--fonte-principal);
   line-height: 1.5;
   display: flex;
+  align-items: center;
   flex-direction: column;
   color: var(--cor-texto);
   transition: background-image 0.5s ease-in-out, background-color 0.5s ease;
 }
+.logo {
+  background-image: url('img/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
 
-/* Quando estiver no modo escuro */
+/* Quando estiver no modo escuro*/ 
 body.dark-mode {
-  background-image: url("img/Faq- IA black.jpg"); /* imagem no modo escuro */
+  background-image: url("../svg/Faq-\ IA\ black.svg")
 }
 /* ===== Cabeçalho ===== */
+
 .Cabecario {
   display: flex;
   flex-direction: row; /* linha horizontal */
@@ -64,23 +73,31 @@ body.dark-mode {
   box-sizing: border-box;
 }
 
-/* seta no canto esquerdo */
-.Cabecario .seta {
-  width: 3%;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.Cabecario .seta:hover {
-  animation: aumentarDiminuir 0.8s ease-in-out infinite;
+.voltar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
-@keyframes balancar {
-  0%   { transform: rotate(0deg) scale(1); }
-  25%  { transform: rotate(10deg) scale(1.1); }
-  50%  { transform: rotate(0deg) scale(1); }
-  75%  { transform: rotate(-10deg) scale(1.1); }
-  100% { transform: rotate(0deg) scale(1); }
+.icone-voltar {
+  width: 26px; 
+  height: 26px;
+  transition: transform 0.2s ease;
+  filter: invert(18%) sepia(16%) saturate(2192%) hue-rotate(229deg) brightness(94%) contrast(91%);
+
+}
+
+.voltar:hover {
+  background-color: rgba(123, 78, 255, 0.1);
+}
+
+.voltar:hover .icone-voltar {
+  transform: scale(1.15);
+  filter: invert(40%) sepia(96%) saturate(1800%) hue-rotate(241deg) brightness(96%) contrast(95%);
 }
 /* logo centralizada */
 .Cabecario .logo {
@@ -210,7 +227,6 @@ h2 {
   width: 80%;
   margin: 40px auto;
   gap: 20px;
-  margin-left: 35%;
 }
 
 .chat-header {
@@ -218,6 +234,7 @@ h2 {
   font-weight: bold;
   opacity: 0.8;
   margin-bottom: 20px;
+  color: white;
 }
 
 .chat-body {
@@ -228,7 +245,7 @@ h2 {
 }
 
 .welcome-message {
-  background-color: var(--cor-terciaria);
+  background-color: var(--cor-primaria);
   border-radius: 15px;
   width: 40%;
   margin-left: 5%;
@@ -240,7 +257,7 @@ h2 {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.3;
-  color: var(--cor-texto);
+  color: white;
   white-space: nowrap;  /* não quebra linha */
   overflow: hidden;     /* esconde o excesso */
   border-right: 4px solid var(--cor-primaria); /* cursor piscando */
@@ -314,7 +331,12 @@ h2 {
 .chat-footer button:hover {
   background-color: #d96d1e; 
 }
-
+/* ===== Onda ===== 
+#onda{
+  width: 100%;
+  margin-bottom: -100px;
+}
+*/
 /* ===== Rodapé ===== */
 .Rodape_pai {
   width: 100%;
@@ -325,8 +347,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
-  margin-top: auto;
+ 
+
 }
 
 .Rodape_pai div li {
