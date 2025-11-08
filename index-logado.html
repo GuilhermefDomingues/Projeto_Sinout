@@ -10,36 +10,33 @@
     <meta name="author" content="Equipe-Sinout" />
     <meta name="robots" content="index, follow" />
     <title>Sinout - Home</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/logado.css" />
   </head>
   <body>
     <header id="white">
-      <nav aria-label="Menu principal">
-        <div class="logo">
-          <img src="img/Logo.png" alt="Logo da Sinout" />
-        </div>
-        <ul class="menu">
-          <li><a href="#white">Home</a></li>
-          <li><a href="./funcionav5.html" target="_blank">Central de ajuda</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <a href="./login.html">
-          <button class="btn-entrar">Acessar</button>
-        </a>
-      </nav>
+  <nav aria-label="Menu principal">
+    <div class="logo">
+      <img src="img/Logo.png" alt="Logo da Sinout" />
+    </div>
+    <ul class="menu">
+      <li><a href="#white">Home</a></li>
+      <li><a href="./funcionav5.html" target="_blank">Central de ajuda</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="estatisticas.html">Estatisticas</a></li>
+    </ul>
+    <a href="Plataforma.html" class="plataforma">Acessar plataforma</a>
+    <a href="./perfil.html">
+        <img src="#" alt="" id="perfil">
+    </a>
+  </nav>
+  <div class="acessibilidade">
+    <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    <button id="contraste" aria-label="Ativar alto contraste">Contraste</button>
+  </div>
+</header>
 
-      <div class="acessibilidade">
-        <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">
-          A+
-        </button>
-        <button id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">
-          A-
-        </button>
-        <button id="contraste" aria-label="Ativar alto contraste">
-          Contraste
-        </button>
-      </div>
-    </header>
+
 
     <main>
       <!-- Hero Section -->
@@ -154,106 +151,7 @@
         </div>
       </section>
 
-      <!-- Planos -->
-      <section id="planos">
-        <div id="fundo-laranja"></div>
-
-        <h2>Planos</h2>
-
-        <div id="imagem-pessoa">
-          <img src="img/meninaSinout.jpeg" alt="Terapeuta usando o sistema" />
-        </div>
-
-        <div class="planos-container">
-          <!-- OLHAR BÁSICO -->
-          <a href="./login.html">
-            <div class="plano">
-              <div id="olhar-basico">
-                <h3>olhar básico</h3>
-                <ul>
-                  <li>Reconhecimento de expressões básicas</li>
-                  <li>
-                    Identifica apenas emoções primárias: feliz, triste e neutro.
-                  </li>
-                  <li>1 paciente + 1 cuidador</li>
-                  <li>
-                    Limite de uso: até 20 interações/mensagens por período de 3
-                    horas
-                  </li>
-                  <li>Relatórios simplificados (sem exportação)</li>
-                  <li>Acesso sem suporte prioritário</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-
-          <!-- OLHAR COMPLETO -->
-          <a href="./login.html">
-            <div id="olhar-completo">
-              <div class="plano destaque">
-                <h3>Olhar completo</h3>
-                <ul>
-                  <li>
-                    Reconhece todas as emoções, incluindo microexpressões e
-                    intensidade emocional.
-                  </li>
-                  <li>Reconhecimento completo de expressões</li>
-                  <li>1 paciente + até 3 cuidadores</li>
-                  <li>Relatórios detalhados com visualização gráfica</li>
-                  <li>Suporte padrão</li>
-                  <li>Uso ilimitado</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-
-          <!-- OLHAR CORPORATIVO -->
-          <a href="./login.html">
-            <div class="plano">
-              <h3>olhar corporativo</h3>
-              <ul>
-                <li>
-                  Inclui insights sobre padrões de comunicação e sugestões de
-                  intervenção.
-                </li>
-                <li>
-                  Identifica todas as emoções, microexpressões e intensidade
-                  emocional.
-                </li>
-                <li>Reconhecimento completo de expressões</li>
-                <li>Pacientes ilimitados com múltiplos cuidadores</li>
-                <li>Uso ilimitado / sem intervalos obrigatórios</li>
-                <li>Relatórios avançados e exportação completa</li>
-                <li>Suporte prioritário corporativo</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <!-- Aprenda -->
-      <section id="Aprenda" class="aprende-bg">
-        <div class="content">
-          <div class="text-aprenda">
-            <h2>APRENDA A USAR A PLATAFORMA!</h2>
-            <p>
-              Pelo próprio celular, tablet ou computador, o Sinout capta
-              expressões faciais e movimentos do rosto em tempo real,
-              transformando-os em comandos intuitivos. A tecnologia permite que
-              o usuário interaja com a interface de forma simples e natural, sem
-              precisar tocar na tela. O sistema aprende com o tempo, tornando a
-              comunicação e o uso cada vez mais rápidos e personalizados.
-            </p>
-            <a href="./aprendaausar.html">
-              <button>Tutorial</button>
-            </a>
-          </div>
-          <figure>
-            <img src="img/hero-aprenda.png" alt="Demonstração do app Sinout" />
-          </figure>
-        </div>
-      </section>
-
+    
       <!-- Depoimentos -->
       <section id="depoimentos">
         <h2>Abrangendo a Todos</h2>
@@ -333,6 +231,30 @@
           </article>
         </div>
       </section>
+
+        <!-- Aprenda -->
+      <section id="Aprenda" class="aprende-bg">
+        <div class="content">
+          <div class="text-aprenda">
+            <h2>APRENDA A USAR A PLATAFORMA!</h2>
+            <p>
+              Pelo próprio celular, tablet ou computador, o Sinout capta
+              expressões faciais e movimentos do rosto em tempo real,
+              transformando-os em comandos intuitivos. A tecnologia permite que
+              o usuário interaja com a interface de forma simples e natural, sem
+              precisar tocar na tela. O sistema aprende com o tempo, tornando a
+              comunicação e o uso cada vez mais rápidos e personalizados.
+            </p>
+            <a href="./aprendaausar.html">
+              <button>Tutorial</button>
+            </a>
+          </div>
+          <figure>
+            <img src="img/hero-aprenda.png" alt="Demonstração do app Sinout" />
+          </figure>
+        </div>
+      </section>
+
 
       <!-- Equipe -->
       <section id="equipe">
@@ -456,10 +378,18 @@
         <div class="rodape-coluna">
           <h3 class="rodape-titulo">Ajuda</h3>
           <ul class="rodape-lista">
-            <li><a href="./funcionav5.html" target="_blank">Como isso funciona?</a></li>
-            <li><a href="./funcionav5.html" target="_blank">Onde perguntar?</a></li>
+            <li>
+              <a href="./funcionav5.html" target="_blank"
+                >Como isso funciona?</a
+              >
+            </li>
+            <li>
+              <a href="./funcionav5.html" target="_blank">Onde perguntar?</a>
+            </li>
             <li><a href="./funcionav5.html" target="_blank">Como paga?</a></li>
-            <li><a href="./funcionav5.html" target="_blank">Eu preciso disso?</a></li>
+            <li>
+              <a href="./funcionav5.html" target="_blank">Eu preciso disso?</a>
+            </li>
           </ul>
         </div>
 
@@ -483,7 +413,7 @@
       </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/logado.js"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   </body>
 </html>

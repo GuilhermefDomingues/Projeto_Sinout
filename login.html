@@ -19,92 +19,97 @@
   </head>
 
   <body>
+    <header>
+      <a href="index.html" class="voltar"><img src="img/Group 83.svg" alt="Voltar" class="icone-voltar"></a>
+    </header>
     <!-- Container geral -->
-    <section id="container">
-      <div class="login-container">
-        <!-- Logo Sinout -->
-        <div class="logo">
-          <img
-            src="img/Imagem_do_WhatsApp_de_2025-10-11_à_s__22.06.07_828e4dd6-removebg-preview.png"
-            alt="Logo Sinout"
-          />
-        </div>
-
-        <div class="login-box">
-          <h2>Entrar</h2>
-
-          <div class="input-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" />
+    <main>
+      <section id="container">
+        <div class="login-container">
+          <!-- Logo Sinout -->
+          <div class="logo">
+            <img
+              src="img/Imagem_do_WhatsApp_de_2025-10-11_à_s__22.06.07_828e4dd6-removebg-preview.png"
+              alt="Logo Sinout"
+            />
           </div>
-
-          <div class="input-group password-group">
-            <label for="password">Senha</label>
-            <div class="password-wrapper">
-              <input
-                type="password"
-                id="password"
-                placeholder="Digite sua senha"
-              />
-              <button
-                id="togglePassword"
-                type="button"
-                class="btn-toggle-password"
-                aria-label="Mostrar senha"
-                aria-pressed="false"
-              >
-                <!-- Ícone olho aberto -->
-                <svg
-                  id="eyeOpen"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="22"
-                  height="22"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>
-                <!-- Ícone olho fechado -->
-                <svg
-                  id="eyeClosed"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="22"
-                  height="22"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  style="display: none"
-                >
-                  <path
-                    d="M17.94 17.94A10.94 10.94 0 0 1 12 20C5 20 1 12 1 12a21.66 21.66 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.84 21.84 0 0 1-2.41 3.61M1 1l22 22"
-                  ></path>
-                </svg>
-              </button>
+  
+          <div class="login-box">
+            <h2>Entrar</h2>
+  
+            <div class="input-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Digite seu e-mail" />
             </div>
+  
+            <div class="input-group password-group">
+              <label for="password">Senha</label>
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Digite sua senha"
+                />
+                <button
+                  id="togglePassword"
+                  type="button"
+                  class="btn-toggle-password"
+                  aria-label="Mostrar senha"
+                  aria-pressed="false"
+                >
+                  <!-- Ícone olho aberto -->
+                  <svg
+                    id="eyeOpen"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <!-- Ícone olho fechado -->
+                  <svg
+                    id="eyeClosed"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="display: none"
+                  >
+                    <path
+                      d="M17.94 17.94A10.94 10.94 0 0 1 12 20C5 20 1 12 1 12a21.66 21.66 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a21.84 21.84 0 0 1-2.41 3.61M1 1l22 22"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+  
+            <p class="register-text">
+              Esqueceu a senha?
+              <a href="./recuperacaoSenha.html">Recuperar</a>
+            </p>
+  
+            <button class="btn-login">Entrar</button>
+  
+            <p class="register-text">
+              Ainda não tem conta?
+              <a href="./cadastro.html">Cadastre-se</a>
+            </p>
           </div>
-
-          <p class="register-text">
-            Esqueceu a senha?
-            <a href="./recuperacaoSenha.html">Recuperar</a>
-          </p>
-
-          <button class="btn-login">Entrar</button>
-
-          <p class="register-text">
-            Ainda não tem conta?
-            <a href="./cadastro.html">Cadastre-se</a>
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- onda laranja -->
     <div class="custom-shape-divider-bottom-1762536954">
