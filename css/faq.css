@@ -110,7 +110,7 @@ body.dark-mode {
 
 /* seta modo escuro */
 body.dark-mode .seta {
-  content: url("img/setaDark.png");
+  content: url("../img/");
 }
 
 /* logo centralizada */
@@ -552,15 +552,49 @@ h1 {
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
   border: none;
-  border-radius: 120px;
-  padding: 12px 20px;
+  border-radius: 10%;
+  padding: 5px 20px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 100px;
-
+  width: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+body.alto-contraste {
+  background-color: #000; 
+  color: #fff; 
+}
+
+body.alto-contraste * {
+  color: #fff !important;
+  background: transparent !important; 
+  border-color: #00ffff !important; 
+}
+
+body.alto-contraste a {
+  color: #00ffff !important;
+  text-decoration: underline;
+}
+
+body.alto-contraste button {
+  background-color: #000 !important;
+  color: #00ffff !important;
+  border: 2px solid #00ffff !important;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste h5,
+body.alto-contraste h6 {
+  color: #00ffff !important; 
+}
+
 
 /* Hover suave */
 #toggle-tema:hover {

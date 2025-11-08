@@ -13,6 +13,14 @@
   --font-primaria: "Staatliches", sans-serif;
   --font-secundaria: "Poppins", sans-serif;
 }
+/* 🌙 Tema Escuro */
+.dark-mode {
+  --cor-fundo: #1a1625;
+  --cor-texto: #000000;
+  --cor-primaria:   #9b7edb;
+  --cor-secundaria: #3F375C;
+  --cor-terciaria:  #FCB98A;
+}
 body {
   width: 100%;
   background-color: var(--cor-primaria);
@@ -1217,4 +1225,50 @@ body.alto-contraste h4,
 body.alto-contraste h5,
 body.alto-contraste h6 {
   color: #00ffff !important; 
+}
+
+
+/* ===== Botão de Modo Escuro ===== */
+#toggle-tema {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  border: none;
+  border-radius: 10%;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+/* Hover suave */
+#toggle-tema:hover {
+  transform: scale(1.1);
+  background-color: var(--cor-terciaria);
+  color: white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Ativo - quando estiver no modo escuro */
+body.dark-mode #toggle-tema {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+/* Hover no modo escuro */
+body.dark-mode #toggle-tema:hover {
+  transform: scale(1.1);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.Rodape_pai {
+  animation: fadeIn 1s ease forwards;
 }

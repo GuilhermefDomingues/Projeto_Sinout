@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const msgErro = document.getElementById("mensagem-erro");
   const msgSucesso = document.getElementById("mensagem-sucesso");
 
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -73,4 +74,20 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle("alto-contraste");
   });
 });
+// Alterna o modo escuro/claro
+const botaoTema = document.getElementById("toggle-tema");
+const body = document.body;
+const seta = document.querySelector(".seta"); // seleciona a imagem da seta
 
+
+botaoTema.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+
+  const modoEscuro = body.classList.contains("dark-mode");
+
+  // Atualiza texto do botão
+  botaoTema.textContent = modoEscuro ? "☀️" : "🌙";
+
+  // Troca a imagem da seta conforme o modo
+  seta.src = modoEscuro ? "img/setaDark.png" : "img/seta.png";
+});
