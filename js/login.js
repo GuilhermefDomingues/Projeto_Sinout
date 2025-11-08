@@ -33,7 +33,7 @@ const btnLogin = document.querySelector(".btn-login");
     msg.style.color = "green";
 
     setTimeout(() => {
-      window.location.href = "./Plataforma.html"; 
+      window.location.href = "./index-logado.html"; 
     }, 1500);
   });
 

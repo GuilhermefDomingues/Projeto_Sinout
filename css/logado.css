@@ -36,11 +36,11 @@ header#white {
   z-index: 1000;
 }
 header#white nav {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: var(--font-primaria);
   letter-spacing: 0.1em;
 }
@@ -55,20 +55,23 @@ header#white li {
 }
 .logo img {
   width: 250px;
+  margin-right: 100px;
 }
 .menu {
   gap: 1.5rem;
+  
 }
 .menu a {
   text-decoration: none;
   color: inherit;
+ 
   font-weight: 600;
   transition: color 0.3s ease;
 }
 .menu a:hover {
   color: var(--cor-secundaria);
 }
-.btn-entrar {
+.plataforma {
   background-color: var(--cor-secundaria);
   color: var(--cor-terciaria);
   font-family: var(--font-primaria);
@@ -78,15 +81,25 @@ header#white li {
   border-radius: 40px;
   padding: 0.6rem 1.4rem;
   cursor: pointer;
+  list-style-type: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 0.9rem;
 } 
 
-#btnLogado {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+
+#perfil {
+  width: 60px;     
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;  /* corta a imagem corretamente */
+  cursor: pointer;    /* muda o cursor ao passar por cima */
+  border: 2px solid var(--cor-secundaria); /* opcional: borda */
+  transition: transform 0.3s ease;
+}
+
+#perfil:hover {
+  transform: scale(1.1); /* aumenta levemente ao passar o mouse */
 }
 
 
@@ -474,147 +487,6 @@ header#white .acessibilidade button:hover {
 
 
 
-
-
-
-
-/*----------------PLANOS--------------------*/
-#planos {
-  background: var(--cor-terciaria);
-  padding: 60px 5% 100px;
-  position: relative;
-  overflow: hidden;
-}
-#planos h2 {
-  font-family: var(--font-primaria);
-  font-weight: bold;
-  font-size: 4rem;
-  color: var(--cor-primaria);
-  text-align: center;
-  margin: 0 0 50px 0;
-  z-index: 3;
-} /* Fundo laranja */
-#fundo-laranja {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 40%;
-  background: linear-gradient(135deg, #f6813b 0%, #e06e2a 100%);
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
-  z-index: 0;
-}
-#imagem-pessoa {
-  position: absolute;
-  top: 120px;
-  right: 5%;
-  width: 450px;
-  z-index: 1;
-}
-#imagem-pessoa img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-} 
-/* Container dos planos */
-.planos-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  margin-top: 380px;
-  z-index: 2;
-  position: relative;
-  flex-wrap: wrap;
-}
-.planos-container .plano {
-  background: var(--cor-terciaria);
-  padding: 90px 30px;
-  border-radius: 30px;
-  width: 100%;
-  max-width: 450px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.planos-container a {
- text-decoration: none;
-}
-
-.planos-container .plano h3 {
-  font-family: var(--font-primaria);
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  color: var(--cor-primaria);
-  margin: 0 0 25px 0;
-}
-.planos-container .plano.destaque h3 {
-  color: var(--cor-secundaria);
-}
-.planos-container .plano ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.planos-container .plano li {
-  font-family: var(--font-secundaria);
-  font-size: 1rem;
-  color: #000;
-  margin-bottom: 14px;
-  padding-left: 28px;
-  padding: 10px 0 0 40px  ;
-  position: relative;
-  line-height: 1.5;
-}
-.planos-container .plano li::before {
-  content: "●";
-  /* padding: 1px; */
-  color: #7c3aed;
-  font-weight:bold;
-  font-size: 30px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.planos-container .plano.destaque li::before {
-  content: "●";
-  color: var(--cor-secundaria);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
-} 
-.plano {
-  min-height: 670px; 
-  display: flex;
-  flex-direction: column;
-}
-
-/* ---------------------- RESPONSIVO ---------------------- */
-@media (max-width: 992px) {
-  #imagem-pessoa {
-    position: relative;
-    width: 300px;
-    margin: 20px auto;
-    right: auto;
-    top: auto;
-  }
-  .planos-container {
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: center;
-  }
-  #planos h2 {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  #planos {
-    padding: 40px 5%;
-  }
-  .planos-container .plano {
-    padding: 30px 20px;
-  }
-} 
 
 
 

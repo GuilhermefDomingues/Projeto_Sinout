@@ -182,3 +182,32 @@ body {
 .custom-shape-divider-bottom-1762540558 .shape-fill { 
     fill: #40385E; 
 }
+
+.senha-group {
+        position: relative;
+      }
+
+      .toggle-icone {
+        position: absolute;
+        right: 10px;
+        top: 38px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        fill: #666;
+        transition: fill 0.2s ease;
+      }
+
+      .toggle-icone:hover {
+        fill: #3f375c; /* roxo do tema */
+      }
+
+      input.erro {
+        border: 2px solid #e74c3c;
+        background-color: #ffeaea;
+      }
+
+      #mensagem {
+        font-weight: 600;
+        margin-top: 10px;
+      }
