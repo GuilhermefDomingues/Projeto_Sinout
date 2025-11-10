@@ -9,18 +9,35 @@
 html {
   scroll-behavior: smooth;
 }
-
+  /* 🌞 Tema Claro */
 :root {
   --cor-primaria: #40385e;
   --cor-secundaria: #f6813b;
   --cor-terciaria: #ffffff;
   --cor-quartenaria: #fafafa;
+  --cor-cards:#ffffff;
+  --cor-marcacao :#7c3aed;
   --font-primaria: "Staatliches", sans-serif;
   --font-secundaria: "Poppins", sans-serif;
+}
+/* 🌙 Tema Escuro */
+.dark-mode {
+  --cor-fundo: #000000;
+  --cor-texto: #fff;
+  --cor-primaria: #9b7edb;
+  --cor-secundaria: #3F375C;
+  --cor-terciaria: #000000;
+  --cor-cards:#40385e;
+  --cor-quartenaria: #40385e;
+  --cor-marcacao :#7c3aed;
 }
 body {
   width: 100%;
   background-color: var(--cor-primaria);
+} 
+body.dark-mode {
+background-image: url("../svg/Faq-\ IA\ black.svg") 
+  var(--cor-fundo);
 } 
 
 
@@ -53,7 +70,7 @@ header#white ul {
 header#white li {
   list-style-type: none;
 }
-.logo img {
+.logo svg {
   width: 250px;
 }
 .menu {
@@ -352,7 +369,7 @@ header#white .acessibilidade button:hover {
 } 
 /* Estilo Individual do Card */
 .card {
-  background-color: var(--cor-terciaria);
+  background-color: var(--cor-cards);
   border-radius: 20px;
   padding: 80px 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
@@ -374,7 +391,7 @@ header#white .acessibilidade button:hover {
   p {
     font-family: var(--font-secundaria);
     font-size: 0.9em;
-    color: #555;
+    color: var(--cor-texto);
     line-height: 1.4;
     margin: 0;
   }
@@ -394,6 +411,7 @@ header#white .acessibilidade button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--cor-primaria);
 }
 #sobre h2 {
   font-family: var(--font-primaria);
@@ -412,7 +430,7 @@ header#white .acessibilidade button:hover {
   display: flex;
   padding: 20px;
   width: 50%;
-  background: var(--cor-terciaria);
+  background: var(--cor-cards);
   border-radius: 1rem;
   align-items: center;
   /* gap: 20px; */
@@ -525,20 +543,95 @@ header#white .acessibilidade button:hover {
   z-index: 2;
   position: relative;
   flex-wrap: wrap;
+  /*botões dos planos 1 -------------------------------------------------------------------------------- */
 }
+#butao-planos1 {
+  display: block;              /* permite centralizar com margin auto */
+  margin: 175px auto 0 auto;    /* centraliza horizontalmente e dá espaçamento superior */
+  padding: 20px 150px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .planos-container .plano {
-  background: var(--cor-terciaria);
+  background: var(--cor-quartenaria);
   padding: 90px 30px;
   border-radius: 30px;
   width: 100%;
   max-width: 450px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
+#butao-planos1:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+
+  /*botões dos planos 2 -------------------------------------------------------------------------------- */
+
+}#butao-planos2 {
+  display: block;              /* permite centralizar com margin auto */
+  margin: 185px auto 0px auto;    /* centraliza horizontalmente e dá espaçamento superior */
+  padding: 20px 150px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.planos-container .plano {
+  background: var(--cor-quartenaria);
+  padding: 90px 30px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+#butao-planos2:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+
+  /*botões dos planos 3 -------------------------------------------------------------------------------- */
+
+}#butao-planos3 {
+  display: block;              /* permite centralizar com margin auto */
+  margin: 90px auto 0 auto;    /* centraliza horizontalmente e dá espaçamento superior */
+  padding: 20px 150px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.planos-container .plano {
+  background: var(--cor-quartenaria);
+  padding: 90px 30px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+#butao-planos3:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+
+}
 
 .planos-container a {
  text-decoration: none;
 }
-
 .planos-container .plano h3 {
   font-family: var(--font-primaria);
   font-weight: bold;
@@ -548,9 +641,13 @@ header#white .acessibilidade button:hover {
   margin: 0 0 25px 0;
 }
 .planos-container .plano.destaque h3 {
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+.texto-planos{
+  color: var(--cor-texto);
 }
 .planos-container .plano ul {
+  color: var(--cor-texto);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -558,17 +655,20 @@ header#white .acessibilidade button:hover {
 .planos-container .plano li {
   font-family: var(--font-secundaria);
   font-size: 1rem;
-  color: #000;
+  color: var(--cor-texto);
   margin-bottom: 14px;
   padding-left: 28px;
   padding: 10px 0 0 40px  ;
   position: relative;
   line-height: 1.5;
+  text-decoration: none;
+
 }
+
 .planos-container .plano li::before {
   content: "●";
   /* padding: 1px; */
-  color: #7c3aed;
+  color: var(--cor-marcacao);
   font-weight:bold;
   font-size: 30px;
   position: absolute;
@@ -577,7 +677,7 @@ header#white .acessibilidade button:hover {
 }
 .planos-container .plano.destaque li::before {
   content: "●";
-  color: var(--cor-secundaria);
+  color: var(--cor-marcacao);
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -587,6 +687,7 @@ header#white .acessibilidade button:hover {
   min-height: 670px; 
   display: flex;
   flex-direction: column;
+  color: var(--cor-texto);
 }
 
 /* ---------------------- RESPONSIVO ---------------------- */
@@ -825,12 +926,12 @@ header#white .acessibilidade button:hover {
     }
   }
   .img1 {
-    width: 250px;
+    width: 300px;
     height: auto;
     border-radius: 100px 100px 0 100px;
   }
   .img2 {
-    width: 250px;
+    width: 300px;
     height: auto;
     border-radius: 100px 0px 0 100px;
   }
@@ -1230,3 +1331,35 @@ body.alto-contraste h5,
 body.alto-contraste h6 {
   color: #00ffff !important; 
 }
+/* modo dark */
+body.dark-mode {
+  background-color: var(--cor-fundo);
+  background-image: url("../svg/Faq-IA-black.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--cor-texto);
+}
+body .dark-mode a{
+  color: var(--cor-texto);
+}
+body .dark-mode p{
+  color: var;
+}
+
+/* Botão no modo escuro */
+body.dark-mode #toggle-tema {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover no modo escuro */
+body.dark-mode #toggle-tema:hover {
+  transform: scale(1.1);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
